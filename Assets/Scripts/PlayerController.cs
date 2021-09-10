@@ -20,8 +20,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed);
-            transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime * -1);
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
 
+        }
     }
 }
